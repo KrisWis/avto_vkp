@@ -3,6 +3,9 @@
 header {
   margin-top: 10px;
   position: relative;
+  background-image: url(../images/header/header_bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .header_geo {
@@ -124,14 +127,6 @@ header {
   display: flex;
 }
 
-/* Главный блок */
-.main_wrapper {
-  height: 850px;
-  background-image: url(../images/header/header_bg.png);
-  background-size: cover;
-  background-position: center;
-}
-
 /* Блок "Что влияет на стоимость автомобиля при выкупе?" */
 .what_influences {
   display: flex;
@@ -153,6 +148,17 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+  margin-top: 20px;
+}
+.what_influences__item {
+  display: flex;
+  gap: 20px;
+}
+.what_influences__item--number {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 102%;
+  text-align: center;
 }
 
 /* Адаптив */

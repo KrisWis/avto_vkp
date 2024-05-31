@@ -1,1 +1,0 @@
-# avto_vkp
