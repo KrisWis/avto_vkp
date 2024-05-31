@@ -1,0 +1,232 @@
+@charset "UTF-8";
+/* Хедер */
+header {
+  margin-top: 10px;
+  position: relative;
+}
+
+.header_geo {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+  color: #000;
+}
+.header_geo--text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 125%;
+  color: #000;
+}
+.header_geo__dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url(../../icons/header_geo__arrow.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 3px;
+  cursor: pointer;
+}
+
+/* Нижняя секция хедера с навигацией */
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.headerWrapper .header__logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0em;
+  color: var(--color-2);
+}
+.headerWrapper .header__logo--second_part {
+  color: var(--color);
+}
+.headerWrapper .nav__desktop_items {
+  display: flex;
+  gap: 35px;
+}
+.headerWrapper .nav__item {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 125%;
+  color: var(--color-2);
+  cursor: pointer;
+}
+.headerWrapper .nav__item--active {
+  color: var(--color-3);
+}
+.headerWrapper .nav__mobile__burger {
+  display: none;
+  margin-top: 10px;
+}
+.headerWrapper .header__announcementWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.headerWrapper .header__announcementWrapper .header__announcement {
+  border-radius: 8px;
+  padding: 13px 40px;
+  background: var(--color);
+  height: 68px;
+}
+.headerWrapper .header__announcementWrapper .header__announcement--text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--color-4);
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__burger {
+  display: none;
+  cursor: pointer;
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__menu {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  background: var(--color-4);
+  position: absolute;
+  top: 80px;
+  right: 200px;
+  padding: 30px;
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__menu .header__announcement {
+  padding: 6px 15px;
+  height: 50px;
+  width: 270px;
+  margin-top: 5px;
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__menu .header__announcement--text {
+  font-size: 15px;
+  gap: 1px;
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__menu .header_geo {
+  margin: 10px 0;
+}
+.headerWrapper .header__announcementWrapper .header__announcement--number {
+  text-decoration: underline;
+  cursor: pointer;
+  display: inline-block;
+}
+.headerWrapper .header__announcementWrapper .nav__adaptive__menu--active {
+  display: flex;
+}
+
+/* Главный блок */
+.main_wrapper {
+  height: 850px;
+  background-image: url(../../images/header/header_bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Блок "Что влияет на стоимость автомобиля при выкупе?" */
+.what_influences {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 350px;
+  margin-bottom: 50px;
+}
+.what_influences--caption {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  text-align: center;
+  color: var(--color-2);
+}
+.what_influences__items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Адаптив */
+@media (max-width: 1600px) {
+  .padding-big {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1400px) {
+  .padding-big {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1250px) {
+  .headerWrapper nav {
+    display: none;
+  }
+  .headerWrapper .header__announcementWrapper .nav__adaptive__burger {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .padding-big {
+    padding: 0 20px;
+  }
+  .header_geo {
+    display: none;
+  }
+  .headerWrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .headerWrapper .header__logo {
+    font-size: 24px;
+    letter-spacing: -0.01em;
+  }
+  .headerWrapper .header__announcementWrapper .nav__adaptive__burger {
+    display: none;
+  }
+  .headerWrapper .nav__mobile__burger {
+    display: block;
+  }
+  .headerWrapper .headerContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  .headerWrapper .header__announcementWrapper .nav__adaptive__menu {
+    right: 10px;
+    top: 45px;
+    width: 330px;
+    height: 377px;
+  }
+  .headerWrapper .header__announcementWrapper .nav__adaptive__menu .header_geo {
+    display: flex;
+  }
+  .headerWrapper .header__announcementWrapper .header__announcement {
+    height: 50px;
+    padding: 6px 40px;
+    width: 339px;
+  }
+  .headerWrapper .header__announcementWrapper .header__announcement--text {
+    font-size: 15px;
+    line-height: 125%;
+  }
+  .headerWrapper .header__announcementWrapper .header__announcement--number {
+    text-decoration: none;
+  }
+}
+@media (max-width: 400px) {
+  .headerWrapper .header__announcementWrapper .nav__adaptive__menu {
+    right: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */

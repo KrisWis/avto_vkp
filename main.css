@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('./assets/fonts/Gilroy/Gilroy-Heavy.eot');
+    src: local('Gilroy Heavy'), local('Gilroy-Heavy'),
+        url('./assets/fonts/Gilroy/Gilroy-Heavy.eot') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy/Gilroy-Heavy.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy/Gilroy-Heavy.woff') format('woff'),
+        url('./assets/fonts/Gilroy/Gilroy-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+:root {
+    --color: #473bf0;
+    --color-2: #161c2d;
+    --color-3: #f64b4b;
+    --color-4: #fff;
+    --5a4499: #5a4499;
+    --color-5: #666;
+    --ffffff: #fff;
+    --9fbff4: #9fbff4;
+    --6aee67: #6aee67;
+    --color-6: #f4f7fa;
+
+    --font-family: "Manrope", sans-serif;
+    --second-family: "Rubik", sans-serif;
+    --third-family: "Gilroy", sans-serif;
+}
+
+html {
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: var(--font-family);
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox */
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+li,
+p,
+address {
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+select {
+    border: none;
+}
+
+select:focus-visible {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.padding-big {
+    padding: 0 200px;
+}
+
+.padding-small {
+    padding: 0 100px;
+}

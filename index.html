@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content='Главная страница сайта "Авто-выкуп"'>
+  <meta name="keywords" content="html, css, js, auto-vikup">
+  <meta name="author" content="KrisWis, botya060606">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="assets/styles/styles.css">
+  <title>Авто Выкуп</title>
+</head>
+
+<body>
+
+    <div class="main_wrapper padding-big">
+        <header>
+
+            <div class="header_geo">
+                <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.5 12.7495C10.0888 12.7495 12.1875 10.6508 12.1875 8.06201C12.1875 5.47318 10.0888 3.37451 7.5 3.37451C4.91117 3.37451 2.8125 5.47318 2.8125 8.06201C2.8125 10.6508 4.91117 12.7495 7.5 12.7495Z" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.5 9.93701C8.53553 9.93701 9.375 9.09755 9.375 8.06201C9.375 7.02648 8.53553 6.18701 7.5 6.18701C6.46447 6.18701 5.625 7.02648 5.625 8.06201C5.625 9.09755 6.46447 9.93701 7.5 9.93701Z" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.5 3.06201V1.81201" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M2.49997 8.06201H1.24997" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.5 13.062V14.312" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12.5 8.06201H13.75" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                
+                <select class="header_geo__dropdown" id="header_geo__dropdown">
+                    <option value="" class="header_geo--text">Москва</option>
+                    <option value="" class="header_geo--text">Евгений</option>
+                    <option value="Батырхан" class="header_geo--text">Батырхан</opti>
+                    <option value="Кто-то ещё" class="header_geo--text">Кто-то ещё</option>
+                </select>
+            </div>
+    
+            <div class="headerWrapper">
+    
+                <div class="headerContainer">
+                    <h1 class="header__logo">Auto<span class="header__logo--second_part">vkp.ru</span></h1>
+                    <svg class="nav__adaptive__burger nav__mobile__burger" id="nav__mobile__burger" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.96555V0.951769H0V2.96555H20ZM20 4.97933V6.99311H0V4.97933H20ZM20 11.0207V9.00689H0V11.0207H20ZM20 15.0482V13.0345H0V15.0482H20Z" fill="black" />
+                    </svg>
+                </div>
+    
+                <nav>
+    
+                    <div class="nav__desktop_items">
+                        <span class="nav__item nav__item--active">Выкуп авто</span>
+                        <span class="nav__item">Подбор авто</span>
+                        <span class="nav__item">Авториелтор</span>
+                        <span class="nav__item">Услуги</span>
+                        <span class="nav__item">Полезное</span>
+                        <span class="nav__item">Контакты</span>
+                    </div>
+    
+                </nav>
+    
+                <div class="header__announcementWrapper">
+                    <svg class="nav__adaptive__burger" id="nav__adaptive__burger" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20 2.96555V0.951769H0V2.96555H20ZM20 4.97933V6.99311H0V4.97933H20ZM20 11.0207V9.00689H0V11.0207H20ZM20 15.0482V13.0345H0V15.0482H20Z" fill="black" />
+                    </svg>
+    
+                    <div class="nav__adaptive__menu" id="nav__adaptive__menu">
+                        <span class="nav__item nav__item--active">Выкуп авто</span>
+                        <span class="nav__item">Подбор авто</span>
+                        <span class="nav__item">Авториелтор</span>
+                        <span class="nav__item">Услуги</span>
+                        <span class="nav__item">Полезное</span>
+                        <span class="nav__item">Контакты</span>
+    
+                        <div class="header_geo">
+                            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.5 12.7495C10.0888 12.7495 12.1875 10.6508 12.1875 8.06201C12.1875 5.47318 10.0888 3.37451 7.5 3.37451C4.91117 3.37451 2.8125 5.47318 2.8125 8.06201C2.8125 10.6508 4.91117 12.7495 7.5 12.7495Z" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 9.93701C8.53553 9.93701 9.375 9.09755 9.375 8.06201C9.375 7.02648 8.53553 6.18701 7.5 6.18701C6.46447 6.18701 5.625 7.02648 5.625 8.06201C5.625 9.09755 6.46447 9.93701 7.5 9.93701Z" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 3.06201V1.81201" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M2.49997 8.06201H1.24997" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M7.5 13.062V14.312" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.5 8.06201H13.75" stroke="#494948" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            
+                            <select class="header_geo__dropdown" id="header_geo__dropdown">
+                                <option value="" class="header_geo--text">Москва</option>
+                                <option value="" class="header_geo--text">Евгений</option>
+                                <option value="Батырхан" class="header_geo--text">Батырхан</opti>
+                                <option value="Кто-то ещё" class="header_geo--text">Кто-то ещё</option>
+                            </select>
+                        </div>
+    
+                        <div class="header__announcement">
+                            <p class="header__announcement--text">Срочный выкуп авто. Звоните!<a href="" class="header__announcement--number">+7 (499) 000-00-00</a></p>
+                        </div>
+                    </div>
+    
+                    <div class="header__announcement">
+                        <p class="header__announcement--text">Срочный выкуп авто. Звоните!<span class="header__announcement--number">+7 (499) 000-00-00</span></p>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </header>
+    </div>
+
+    <main>
+        <div class="what_influences padding-big">
+            <h2 class="what_influences--caption">Что влияет на стоимость <span>автомобиля при выкупе?</span></h2>
+
+            <div class="what_influences__items">
+
+                <div class="what_influences__item">
+                    <p class="what_influences__item--number">1</p>
+
+                    <div class="what_influences__item--text">
+                        <h3 class="what_influences__item--caption">Техническая часть</h3>
+                        <p class="what_influences__item--description">Мы должны убедиться в каком техническом состоянии находится Ваш автомобиль.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script async src="./assets/scripts/main.js"></script>
+</body>
