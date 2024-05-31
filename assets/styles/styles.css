@@ -24,7 +24,7 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   background: transparent;
-  background-image: url(../../icons/header_geo__arrow.svg);
+  background-image: url(../icons/header_geo__arrow.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 3px;
@@ -127,7 +127,7 @@ header {
 /* Главный блок */
 .main_wrapper {
   height: 850px;
-  background-image: url(../../images/header/header_bg.png);
+  background-image: url(../images/header/header_bg.png);
   background-size: cover;
   background-position: center;
 }
